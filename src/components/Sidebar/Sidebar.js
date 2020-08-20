@@ -21,7 +21,7 @@ function Sidebar() {
         }))
       )
     );
-  }, []);
+  }, [channels]);
 
   return (
     <div className="sidebar">
@@ -37,13 +37,19 @@ function Sidebar() {
       </div>
       {sidebarsData.map((sidebarData) =>
         sidebarData.type === "line" ? (
-          <hr />
+          <hr key={sidebarData.sort} />
         ) : (
-          <SidebarOption Icon={sidebarData.Icon} title={sidebarData.title} />
+          <SidebarOption
+            key={sidebarData.sort}
+            Icon={sidebarData.Icon}
+            title={sidebarData.title}
+            addChannelOption={sidebarData.addChannelOption}
+          />
         )
       )}
+
       {channels.map((channel) => (
-        <SidebarOption title={channel.name} id={channel.id} />
+        <SidebarOption key={channel.id} title={channel.name} id={channel.id} />
       ))}
     </div>
   );

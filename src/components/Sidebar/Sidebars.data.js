@@ -11,49 +11,62 @@ import AddIcon from "@material-ui/icons/Add";
 
 export const sidebarsData = [
   {
+    sort: 1,
     Icon: InsertCommentIcon,
     title: "Threads",
   },
   {
+    sort: 2,
     Icon: InboxIcon,
     title: "Mentions & reactions",
   },
   {
+    sort: 3,
     Icon: DraftsIcon,
     title: "Saved items",
   },
   {
+    sort: 4,
     Icon: BookmarkBorderIcon,
     title: "Channel browser",
   },
   {
+    sort: 5,
     Icon: PeopleAltIcon,
     title: "People & user groups",
   },
   {
+    sort: 6,
     Icon: AppsIcon,
     title: "Apps",
   },
   {
+    sort: 7,
     Icon: FileCopyIcon,
     title: "File browser",
   },
   {
+    sort: 8,
     Icon: ExpandLessIcon,
     title: "Show less",
   },
   {
+    sort: 9,
     type: "line",
   },
   {
+    sort: 10,
     Icon: ExpandMoreIcon,
     title: "Channels",
   },
   {
+    sort: 11,
     type: "line",
   },
   {
+    sort: 12,
     Icon: AddIcon,
-    title: "Add Channels",
+    title: "Channels",
+    addChannelOption: true,
   },
 ];
